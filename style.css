@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 65px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 400;
+}
+button:hover {
+  background-color: #13005a;
+  color: white;
+}
+.container {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+img {
+  height: 350px;
+  width: 350px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.nike {
+  margin-right: 75px;
+  background-color: #b6b3cc;
+  width: 250px;
+  height: 250px;
+  background-image: url(https://producthovercard.netlify.app/nikelogo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.jordan {
+  margin-left: 75px;
+  background-color: #bcb5af;
+  width: 250px;
+  height: 250px;
+  background-image: url(https://producthovercard.netlify.app/airjordanlogo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.shoe:hover {
+  border-radius: 10px;
+  transform: scale(1.3);
+  width: 500px;
+  background-size: 0;
+}
+.shoe:hover img {
+  opacity: 1;
+  position: absolute;
+  right: 10px;
+  transform: translate(90px, -10px);
+}
+.shoe:hover .text {
+  height: 350px;
+  width: 250px;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
